@@ -12,7 +12,6 @@ import (
 // we use Luhn's algorithm to determine if a credit card is syntactically correct
 // if checksum is 0 is valid
 // else is going to return 1
-// if it is not a valid input return 1 and an error
 func checksumOk(s string) int {
 	sum := 0
 	for i := len(s) - 2; i >= 0; i -= 2 {
